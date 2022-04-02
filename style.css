@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Open+Sans:wght@500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+h2 {
+  text-align: center;
+}
+.form {
+  padding: 10px 20px;
+}
+
+.form-control {
+  padding: 5px;
+  position: relative;
+}
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.form-control input {
+  display: block;
+  margin-bottom: 5px;
+  width: 320px;
+  padding: 7px 5px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.form-control:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.button {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 6px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #2ecc71;
+  border: 2px solid #2ecc71;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.form-control.success input {
+  border: 2px solid #2ecc71;
+}
+.form-control.error input {
+  border: 2px solid #e74c3c;
+}
+.form-control span {
+  visibility: hidden;
+  position: absolute;
+  color: #e74c3c;
+  left: 10px;
+  bottom: 0px;
+  font-size: 18px;
+}
+.form-control.error span {
+  visibility: visible;
+}
